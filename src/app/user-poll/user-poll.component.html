@@ -1,3 +1,10 @@
-<p>
-  user-poll works!
-</p>
+<aside class="animated zoomIn">
+  <h2> Poll: Are you excited about Angular Elements?</h2>
+
+  <hr>
+
+  <div *ngIf="!hasVoted" class="animated bounceInUp">
+    <button class="green" (click)="vote('yes')">Yes! :)</button>
+    <button class="green" (click)="vote('no')">No! :)</button>
+  </div>
+</aside>
